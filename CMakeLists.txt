@@ -20,7 +20,11 @@ FetchContent_MakeAvailable(Catch2)
 include_directories(src)
 
 add_executable(Main
-        src/main.cpp # your test file
+        src/main.cpp
+        src/Student.h
+        src/AVLTree.cpp
+        src/AVLTree.h
+        test/test.cpp # your test file
         # add your own header files below - should be automatically added in CLion
         # ex: src/AVL.h src/AVL.cpp
         )
